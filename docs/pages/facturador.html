@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Facturador</title>
   <link rel="stylesheet" href="./static/css/facturador.css">
+  <title>Facturador</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150061762-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-150061762-1');
+  </script>
 </head>
+
 <body>
   <div class="container">
     <h1>Facturador Excel (Beta)</h1>
@@ -26,11 +37,11 @@
           No hay un límite en la cantidad de comprobantes emitidos.
         </li>
         <li>
-          Es de código abierto. Puede modificar y personalizar la aplicación.
+          Es de código abierto. Si sabe programar puede modificar y personalizar la aplicación.
         </li>
         <li>
           Emisión de comprobantes sin conección a internet.
-          Sin embargo, para el envio de comprobantes, será necesario una conección a internet.
+          Sin embargo, para el envio de comprobantes será necesario una conección a internet.
         </li>
       </ul>
     </section>
@@ -53,14 +64,11 @@
           No tiene soporte para retenciones o percepciones del IGV.
         </li>
         <li>
-          No tiene soporte para el control de inventarios.
-        </li>
-        <li>
           Está en Beta. Eso significa que puede haber algunos contratiempos.
         </li>
       </ul>
 
-      <p>Algunas de estas limitaciones serán superadas en versiones futuras.</p>
+      <p>Es posible que en versiones futuras se superen algunas de estas limitaciones.</p>
     </section>
 
     <section>
@@ -78,14 +86,28 @@
 
     <section>
       <h2>Versión de pago</h2>
-        <p>La versión de pago tiene dos caracteristicas adicionales:</p>
-        <ul>
-          <li>Emisión de comprobante en formato A4 y ticket.</li>
-          <li>Envio de comprobantes por correo electrónico de forma masiva.</li>
-        </ul>
-        <p>Contacto: facturador@protonmail.com</p>
+      <p>La versión de pago tiene dos caracteristicas adicionales:</p>
+      <ul>
+        <li>Emisión de comprobante en formato A4 y ticket.</li>
+        <li>Envio de comprobantes por correo electrónico de forma masiva.</li>
+      </ul>
+      <p>Contacto: facturador@protonmail.com</p>
     </section>
 
+    <section>
+      <h2>Otras aplicaciones</h2>
+      <p>
+        <a href="https://raw.githubusercontent.com/PartidaDoble/ConsultaCPE/master/ConsultaCPE-v1.2.1.xlsm"
+          target="_blank">
+          Consulta comprobantes electrónicos
+        </a>
+      </p>
+      <p>
+        <a href="https://plancontable.github.io/" target="_blank">
+          Plan Contable General Empresarial
+        </a>
+      </p>
+    </section>
   </div>
 </body>
 </html>
