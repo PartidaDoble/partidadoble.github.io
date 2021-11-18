@@ -1,131 +1,117 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./static/css/facturador.css" />
+    <title>Facturador</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-150061762-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./static/css/facturador.css">
-  <title>Facturador</title>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150061762-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+      gtag("config", "UA-150061762-1");
+    </script>
+  </head>
 
-    gtag('config', 'UA-150061762-1');
-  </script>
-</head>
+  <body>
+    <div class="container">
+      <h1>Facturador Excel (Beta)</h1>
 
-<body>
-  <div class="container">
-    <h1>Facturador Excel (Beta)</h1>
+      <section>
+        <h2>Sistema de facturación electrónica</h2>
 
-    <section>
-      <h2>Sistema de facturación electrónica</h2>
+        <p>Características:</p>
 
-      <p>Características:</p>
+        <ul>
+          <li>
+            Emisión de Facturas, Boletas de Venta y Notas de Crédito o Débito
+            electrónicas.
+          </li>
+          <li>Anulación de comprobantes emitidos.</li>
+          <li>Envió de comprobantes y resúmenes a la SUNAT.</li>
+          <li>Consulta de tickets.</li>
+          <li>
+            Emisión de comprobantes sin conección a internet. Sin embargo, para
+            el envío de comprobantes será necesario una conección a internet.
+          </li>
+          <li>No hay un límite en el número de comprobantes emitidos.</li>
+          <li>Representación impresa en formato PDF.</li>
+          <li>
+            Es de código abierto. Puede modificar y personalizar la aplicación.
+          </li>
+        </ul>
+      </section>
 
-      <ul>
-        <li>
-          Emisión de Facturas, Boletas de Venta y Notas de Crédito o Débito electrónicas.
-        </li>
-        <li>
-          Anulación de comprobantes emitidos.
-        </li>
-        <li>
-          Envió de comprobantes y resúmenes a la SUNAT.
-        </li>
-        <li>
-          Consulta de tickets.
-        </li>
-        <li>
-          Emisión de comprobantes sin conección a internet.
-          Sin embargo, para el envío de comprobantes será necesario una conección a internet.
-        </li>
-        <li>
-          No hay un límite en el número de comprobantes emitidos.
-        </li>
-        <li>
-          Representación impresa en formato PDF.
-        </li>
-        <li>
-          Es de código abierto. Puede modificar y personalizar la aplicación.
-        </li>
-      </ul>
-    </section>
+      <section>
+        <h2>Limitaciones de la aplicación</h2>
 
-    <section>
-      <h2>Limitaciones de la aplicación</h2>
+        <ul>
+          <li>Solo admite ventas gravadas con el IGV.</li>
+          <li>No tiene soporte para pagos anticipados.</li>
+          <li>
+            No tiene soporte para descuentos y cargos. Esto se soluciona
+            disminuyendo o aumentando el precio unitario al momento de facturar.
+          </li>
+          <li>No tiene soporte para retenciones o percepciones del IGV.</li>
+          <li>
+            Está en Beta. Eso significa que puede haber algunos contratiempos.
+          </li>
+        </ul>
 
-      <ul>
-        <li>
-          Solo admite ventas gravadas con el IGV.
-        </li>
-        <li>
-          No tiene soporte para pagos anticipados.
-        </li>
-        <li>
-          No tiene soporte para descuentos y cargos. Esto se soluciona disminuyendo
-          o aumentando el precio unitario al momento de facturar.
-        </li>
-        <li>
-          No tiene soporte para retenciones o percepciones del IGV.
-        </li>
-        <li>
-          Está en Beta. Eso significa que puede haber algunos contratiempos.
-        </li>
-      </ul>
+        <p>
+          Es posible que en versiones futuras se superen algunas de estas
+          limitaciones.
+        </p>
+      </section>
 
-      <p>Es posible que en versiones futuras se superen algunas de estas limitaciones.</p>
-    </section>
+      <section>
+        <h2>Descargar el Facturador Excel</h2>
 
-    <section>
-      <h2>Comunidad</h2>
+        <p>
+          Antes de usar la aplicación debe leer la
+          <a
+            href="https://victorze.notion.site/Configuraci-n-b-sica-e10700483f1c4aa7804806139accf86f"
+            target="_blank"
+          >
+            guía de configuración.
+          </a>
+        </p>
 
-      <p>
-        He creado un servidor de
-        <a href="https://discord.gg/9rSqJs8fNQ" target="_blank">discord</a>.
-        Allí podrán hacer preguntas, reportar errores y sugerir mejoras.
-      </p>
-    </section>
+        <div class="download">
+          <a
+            href="https://github.com/PartidaDoble/versions/raw/master/facturador/Facturador-Beta-0.0.2.xlsm"
+            class="download-button"
+            >Descargar</a
+          >
+          <span class="version">Facturador-Beta-0.0.2.xlsm</span>
+        </div>
+      </section>
 
-    <section>
-      <h2>Descargar el Facturador Excel</h2>
+      <section>
+        <h2>Otras aplicaciones</h2>
 
-      <p>
-        Antes de usar la aplicación debe leer la
-        <a href="https://victorze.notion.site/Configuraci-n-b-sica-e10700483f1c4aa7804806139accf86f" target="_blank">
-          guía de configuración.
-        </a>
-      </p>
-
-      <div class="download">
-        <a href="https://github.com/PartidaDoble/versions/raw/master/facturador/Facturador-Beta1.0.1.xlsm" class="download-button">Descargar</a>
-        <span class="version">Facturador-Beta1.0.1.xlsm</span>
-      </div>
-    </section>
-
-    <section>
-      <h2>Versión de pago</h2>
-
-      <p>Más información <a href="https://victorze.notion.site/Sobre-la-versi-n-de-pago-34ba886bd58149ab92f0bed69e23d606" target="_blank">aquí</a>.</p>
-    </section>
-
-    <section>
-      <h2>Otras aplicaciones</h2>
-      <p>
-        <a href="https://raw.githubusercontent.com/PartidaDoble/ConsultaCPE/master/ConsultaCPE-v1.2.1.xlsm"
-          target="_blank">
-          Consulta de comprobantes electrónicos
-        </a>
-      </p>
-      <p>
-        <a href="https://plancontable.github.io/" target="_blank">
-          Plan Contable General Empresarial
-        </a>
-      </p>
-    </section>
-  </div>
-</body>
+        <p>
+          <a
+            href="https://raw.githubusercontent.com/PartidaDoble/ConsultaCPE/master/ConsultaCPE-v1.2.1.xlsm"
+            target="_blank"
+          >
+            Consulta de comprobantes electrónicos
+          </a>
+        </p>
+        <p>
+          <a href="https://plancontable.github.io/" target="_blank">
+            Plan Contable General Empresarial
+          </a>
+        </p>
+      </section>
+    </div>
+  </body>
 </html>
